@@ -1,0 +1,4 @@
+@classmethod is a decorator of django model class. Normally we have to use self whenever we create a function in model class. like def fun(self).
+If we use @classmethod before a function, this will give all the attributes of the cls. we just need to add a parameter while creating a function.
+example: def update_price(cls, id, price):
+              prod = cls.objecs.filter(product_id = id)
